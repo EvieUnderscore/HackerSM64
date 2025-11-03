@@ -30,3 +30,9 @@
 #include "src/s2d_engine/s2d_config.h"
 #include FONT_C_FILE
 #endif
+
+#include "yellow_coin/model.inc.c"
+
+#include "red_coin/model.inc.c"
+
+#include "blue_coin/model.inc.c"

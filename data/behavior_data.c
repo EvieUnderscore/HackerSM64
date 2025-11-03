@@ -388,7 +388,6 @@ enum BehaviorCommands {
 #define SPAWN_WATER_DROPLET(dropletParams) \
     BC_BPTR(BHV_CMD_SPAWN_WATER_DROPLET, dropletParams)
 
-
 const BehaviorScript bhvStarDoor[] = {
     BEGIN(OBJ_LIST_SURFACE),
     SET_INT(oInteractType, INTERACT_DOOR),
@@ -978,15 +977,14 @@ const BehaviorScript bhvOneCoin[] = {
 };
 
 const BehaviorScript bhvYellowCoin[] = {
-    BEGIN(OBJ_LIST_LEVEL),
-    // Yellow coin - common:
-    BILLBOARD(),
-    OR_INT(oFlags, (OBJ_FLAG_COMPUTE_DIST_TO_MARIO | OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE)),
+	BEGIN(OBJ_LIST_LEVEL),
+	OR_INT(oFlags, OBJ_FLAG_UPDATE_GFX_POS_AND_ANGLE),
     CALL_NATIVE(bhv_init_room),
     CALL_NATIVE(bhv_yellow_coin_init),
-    BEGIN_LOOP(),
-        CALL_NATIVE(bhv_yellow_coin_loop),
-    END_LOOP(),
+	BEGIN_LOOP(),
+		CALL_NATIVE(bhv_yellow_coin_loop), 
+        ADD_INT(oFaceAngleYaw, 0x500),
+	END_LOOP(),
 };
 
 const BehaviorScript bhvTemporaryYellowCoin[] = {
@@ -4574,6 +4572,7 @@ const BehaviorScript bhvRedCoin[] = {
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_red_coin_loop),
         ADD_INT(oAnimState, 1),
+        ADD_INT(oFaceAngleYaw, 0x500),
     END_LOOP(),
 };
 

@@ -25,12 +25,12 @@ extern const Gfx butterfly_seg3_dl_030054A0[];
 extern const struct Animation *const butterfly_seg3_anims_030056B0[];
 
 // coin
-extern const GeoLayout yellow_coin_geo[];
-extern const GeoLayout yellow_coin_no_shadow_geo[];
-extern const GeoLayout blue_coin_geo[];
-extern const GeoLayout blue_coin_no_shadow_geo[];
-extern const GeoLayout red_coin_geo[];
-extern const GeoLayout red_coin_no_shadow_geo[];
+//extern const GeoLayout yellow_coin_geo[];
+//extern const GeoLayout yellow_coin_no_shadow_geo[];
+//extern const GeoLayout blue_coin_geo[];
+//extern const GeoLayout blue_coin_no_shadow_geo[];
+//extern const GeoLayout red_coin_geo[];
+//extern const GeoLayout red_coin_no_shadow_geo[];
 #ifdef IA8_30FPS_COINS
 extern const GeoLayout silver_coin_geo[];
 extern const GeoLayout silver_coin_no_shadow_geo[];

@@ -142,6 +142,8 @@ const LevelScript level_jrb_entry[] = {
 
     AREA(/*index*/ 1, jrb_geo_000A18),
         OBJECT(/*model*/ MODEL_NONE, /*pos*/ -6750, 2126, 1482, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvSpinAirborneWarp),
+        OBJECT_WITH_ACTS(/*model*/ MODEL_YELLOW_COIN, /*pos*/ 4898, 2206, 812, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvYellowCoin, ACT_2 | ACT_3 | ACT_4 | ACT_5 | ACT_6), // the water glass object, intended for "Drink a lot of water, Piss a lot of pee."
+        OBJECT(/*model*/ MODEL_YELLOW_COIN, /*pos*/ -7125, 1126, 1828, /*angle*/ 0, 90, 0, /*behParam*/ 0x000A0000, /*beh*/ bhvYellowCoin),
         WARP_NODE(/*id*/ 0x0A, /*destLevel*/ LEVEL_JRB, /*destArea*/ 0x01, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ 0xF3, /*destLevel*/ LEVEL_JRB, /*destArea*/ 0x02, /*destNode*/ 0x0A, /*flags*/ WARP_NO_CHECKPOINT),
         WARP_NODE(/*id*/ 0xF0, /*destLevel*/ LEVEL_CASTLE, /*destArea*/ 0x01, /*destNode*/ 0x35, /*flags*/ WARP_NO_CHECKPOINT),

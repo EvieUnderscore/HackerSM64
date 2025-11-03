@@ -20,7 +20,7 @@
 /**
  * Show a watermark on the title screen that reads "Made with HackerSM64", instead of the copyright message.
  */
-#define INTRO_CREDIT
+// #define INTRO_CREDIT
 
 /**
  * Spawns floombas on the title screen.
@@ -30,7 +30,7 @@
 /**
  * Enables widescreen (16:9) support.
  */
-#define WIDE
+// #define WIDE
 
 /**
  * Skybox size modifier, changing this will add support for larger skybox images. NOTE: Vanilla skyboxes may break if you change this option. Be sure to rescale them accordingly.
@@ -87,12 +87,12 @@
 /**
  * Use 64x64 quarter shadow textures (Vanilla are 16x16).
  */
-#define HD_SHADOWS
+//#define HD_SHADOWS
 
 /**
  * Makes certain objects (mainly trees) transparent when the camera gets close.
  */
-// #define OBJ_OPACITY_BY_CAM_DIST
+ #define OBJ_OPACITY_BY_CAM_DIST
 
 /**
  * Fixes the game reading the ia8 burn smoke texture as an rgba16.
@@ -113,7 +113,7 @@
 /**
  * Disables all object shadows. You'll probably only want this either as a last resort for performance or if you're making a super stylized hack.
  */
-// #define DISABLE_SHADOWS
+ #define DISABLE_SHADOWS
 
 /**
  * Uses old shadow IDs for Fast64 compatibility. This is a temporary fix until Fast64 is updated to use the enum defines.
@@ -144,7 +144,7 @@
  * Eases the textured screen transitions to make them look smoother. 
  * Extends the full radius for mario, bowser and the star transitions.
  */
-// #define POLISHED_TRANSITIONS
+ #define POLISHED_TRANSITIONS
 
 /**
  * Uses frustratio of 2 instead of 1.

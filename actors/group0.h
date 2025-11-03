@@ -331,4 +331,40 @@ extern const Gfx white_particle_small_dl_end[];
 extern const Gfx white_particle_small_dl[];
 extern const Gfx white_particle_small_unused_dl[];
 
+extern const GeoLayout yellow_coin_geo[];
+extern u8 yellow_coin_obj_coin_ci8[];
+extern u8 yellow_coin_obj_coin_pal_rgba16[];
+extern Vtx yellow_coin_skinned_mesh_layer_1_vtx_cull[8];
+extern Vtx yellow_coin_skinned_mesh_layer_1_vtx_0[410];
+extern Gfx yellow_coin_skinned_mesh_layer_1_tri_0[];
+extern Gfx mat_yellow_coin_f3dlite_material[];
+extern Gfx mat_revert_yellow_coin_f3dlite_material[];
+extern Gfx yellow_coin_skinned_mesh_layer_1[];
+
+extern const GeoLayout blue_coin_geo[];
+extern u8 blue_coin_obj_coin_blue_ci8[];
+extern u8 blue_coin_obj_coin_blue_pal_rgba16[];
+extern Vtx blue_coin_skinned_mesh_layer_1_vtx_cull[8];
+extern Vtx blue_coin_skinned_mesh_layer_1_vtx_0[410];
+extern Gfx blue_coin_skinned_mesh_layer_1_tri_0[];
+extern Gfx mat_blue_coin_f3dlite_material[];
+extern Gfx mat_revert_blue_coin_f3dlite_material[];
+extern Gfx blue_coin_skinned_mesh_layer_1[];
+
+extern const GeoLayout red_coin_geo[];
+extern u8 red_coin_obj_coin_red_ci8[];
+extern u8 red_coin_obj_coin_red_pal_rgba16[];
+extern Vtx red_coin_skinned_mesh_layer_1_vtx_cull[8];
+extern Vtx red_coin_skinned_mesh_layer_1_vtx_0[410];
+extern Gfx red_coin_skinned_mesh_layer_1_tri_0[];
+extern Gfx mat_red_coin_f3dlite_material[];
+extern Gfx mat_revert_red_coin_f3dlite_material[];
+extern Gfx red_coin_skinned_mesh_layer_1[];
+
+#include "yellow_coin/geo_header.h"
+
+#include "blue_coin/geo_header.h"
+
+#include "red_coin/geo_header.h"
+
 #endif
